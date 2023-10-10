@@ -11,7 +11,7 @@ object RetrofitHelper {
     }*/
     private val retrofitBuilder = Retrofit.Builder() //retrofit has builder method which we need to call
 
-    private val retrofit = retrofitBuilder.baseUrl("www.newsapi.org/v2/")
+    private val retrofit = retrofitBuilder.baseUrl(Constants.BASE_URL)
     /*private val retrofit = Retrofit.Builder()
         .baseUrl("www.newsapi.org/v2/")*/ //we can write like this also
         .addConverterFactory(GsonConverterFactory.create())
